@@ -1,8 +1,8 @@
 {
   plugins = {
     project-nvim = {
-      enable = true;
-      enableTelescope = true;
+      enable = false;
+      enableTelescope = false;
     };
   };
 }

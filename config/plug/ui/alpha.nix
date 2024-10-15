@@ -11,7 +11,6 @@
         "                                            ┛                    "
         "							 	                                                  "
         "								                                                  "
-        "\t\t\t\t\t\t\t			git@github.com:webmessia-h	                  "
         "								                                                  "
       ];
     in
@@ -58,17 +57,11 @@
               };
             in
             [
-              #(mkButton "f" "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>" "Find File"
-              #  "Operator"
-              #)
-
-              (mkButton "p" "<CMD>lua require('telescope').extensions.projects.projects{}<CR>" "Projects"
+              (mkButton "f" "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>" "Find File"
                 "Operator"
               )
 
               (mkButton "n" "<CMD>ObsidianToday<CR>" "Note" "Operator")
-
-              (mkButton "w" "<CMD>ObsidianQuickSwitch<CR>" "Wiki" "Operator")
 
               (mkButton "q" "<CMD>qa<CR>" "Quit" "String")
             ];
@@ -76,14 +69,6 @@
         {
           type = "padding";
           val = 2;
-        }
-        {
-          opts = {
-            hl = "GruvboxBlue";
-            position = "center";
-          };
-          type = "text";
-          val = "https://github.com/webmessia-h/nixvi";
         }
       ];
     };

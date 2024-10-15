@@ -1,16 +1,8 @@
 { config, lib, ... }:
 {
   plugins = {
-    /*   which-key.settings.spec = lib.optionals config.plugins.obsidian.enable [
-      {
-        __unkeyed = "<leader>h";
-        mode = "n";
-        group = "obsidian";
-      }
-    ];*/
-
     obsidian = {
-      enable = true;
+      enable = false;
 
       settings = {
         ui = {

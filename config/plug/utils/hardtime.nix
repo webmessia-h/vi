@@ -1,7 +1,7 @@
 { lib, ... }:
 {
   plugins.hardtime = {
-    enable = lib.mkDefault false;
+    enable = lib.mkDefault true;
     settings = {
       enabled = true;
       disable_mouse = true;

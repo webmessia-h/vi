@@ -8,7 +8,7 @@
     ./highlight.nix
 
     # Colorschemes
-    ./plug/colorscheme/biscuit.nix
+    #./plug/colorscheme/biscuit.nix
     ./plug/colorscheme/colorscheme.nix
 
     # Completion and LSP
@@ -52,25 +52,25 @@
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
-    ./plug/ui/project.nix
+    #./plug/ui/project.nix
     #./plug/ui/image-nvim.nix
     #./plug/ui/nabla.nix
 
     # Utility Plugins
     ./plug/utils/comment.nix
-    ./plug/utils/wakatime.nix
-    ./plug/utils/comment-box.nix
+    #./plug/utils/wakatime.nix
+    #./plug/utils/comment-box.nix
     ./plug/utils/flash.nix
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
     ./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
-    ./plug/utils/markview.nix
+    #./plug/utils/markview.nix
     ./plug/utils/colorizer.nix
     ./plug/utils/mini.nix
     ./plug/utils/neo-tree.nix
     ./plug/utils/nvim-autopairs.nix
-    ./plug/utils/obsidian.nix
+    #./plug/utils/obsidian.nix
     ./plug/utils/oil.nix
     ./plug/utils/ufo.nix
     ./plug/utils/undotree.nix
