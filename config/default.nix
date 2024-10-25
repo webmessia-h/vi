@@ -63,9 +63,9 @@
     ./plug/utils/flash.nix
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
-    ./plug/utils/hardtime.nix
+    #./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
-    #./plug/utils/markview.nix
+    ./plug/utils/markview.nix
     ./plug/utils/colorizer.nix
     ./plug/utils/mini.nix
     ./plug/utils/neo-tree.nix

@@ -57,7 +57,7 @@ in
         lualine_b = [
           {
             __unkeyed = "branch";
-            icon.__unkeyed = "";
+            icon.__unkeyed = "";
             color = {
               fg = colors.base04;
               bg = "nil";
