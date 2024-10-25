@@ -16,7 +16,6 @@
     ./plug/completion/lspkind.nix
     ./plug/lsp/conform.nix
     ./plug/lsp/fidget.nix
-    ./plug/lsp/hlchunk.nix
     ./plug/lsp/lsp.nix
     ./plug/lsp/lspsaga.nix
     ./plug/lsp/none-ls.nix
@@ -43,6 +42,7 @@
     ./plug/treesitter/treesitter.nix
 
     # UI Enhancements
+    ./plug/ui/project.nix
     ./plug/ui/web-devicons.nix
     ./plug/ui/dressing.nix
     ./plug/ui/smart-splits.nix
@@ -52,14 +52,10 @@
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
-    #./plug/ui/project.nix
-    #./plug/ui/image-nvim.nix
-    #./plug/ui/nabla.nix
+    ./plug/ui/hlchunk.nix
 
     # Utility Plugins
     ./plug/utils/comment.nix
-    #./plug/utils/wakatime.nix
-    #./plug/utils/comment-box.nix
     ./plug/utils/flash.nix
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
@@ -70,14 +66,10 @@
     ./plug/utils/mini.nix
     ./plug/utils/neo-tree.nix
     ./plug/utils/nvim-autopairs.nix
-    #./plug/utils/obsidian.nix
     ./plug/utils/oil.nix
     ./plug/utils/ufo.nix
     ./plug/utils/undotree.nix
     ./plug/utils/whichkey.nix
-    #./plug/utils/vim-be-good.nix
-    #./plug/utils/harpoon.nix
-    #./plug/utils/graph.nix
   ];
 
   # Theme options

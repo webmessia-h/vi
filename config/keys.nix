@@ -53,26 +53,8 @@
         "n"
         "v"
       ];
-      key = "<leader>d";
-      action = "+debug";
-    }
-
-    {
-      mode = [
-        "n"
-        "v"
-      ];
       key = "<leader>c";
       action = "+code";
-    }
-
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>t";
-      action = "+test";
     }
 
     # Tabs
@@ -394,38 +376,39 @@
     {
       mode = "n";
       key = "<leader>1";
-      action = "<CMD> Grapple select index=1<CR>";
+      action = "<CMD>Grapple select index=1<CR>";
       options = {
-        desc = "Grapple Select 1";
+        desc = "which_key_ignore";
       };
     }
 
     {
       mode = "n";
       key = "<leader>2";
-      action = "<CMD> Grapple select index=2<CR>";
+      action = "<CMD>Grapple select index=2<CR>";
       options = {
-        desc = "Grapple Select 2";
+        desc = "which_key_ignore";
       };
     }
 
     {
       mode = "n";
       key = "<leader>3";
-      action = "<CMD> Grapple select index=3<CR>";
+      action = "<CMD>Grapple select index=3<CR>";
       options = {
-        desc = "Grapple Select 3";
+        desc = "which_key_ignore";
       };
     }
 
     {
       mode = "n";
       key = "<leader>4";
-      action = "<CMD> Grapple select index=4<CR>";
+      action = "<CMD>Grapple select index=4<CR>";
       options = {
-        desc = "Grapple Select 4";
+        desc = "which_key_ignore";
       };
     }
+
   ];
   extraConfigLua = ''
     function ToggleLineNumber()

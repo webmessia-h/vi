@@ -60,9 +60,9 @@
               (mkButton "f" "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>" "Find File"
                 "Operator"
               )
-
-              (mkButton "n" "<CMD>ObsidianToday<CR>" "Note" "Operator")
-
+              (mkButton "p" "<CMD>lua require('telescope').extensions.projects.projects{}<CR>" "Projects"
+                "Operator"
+              )
               (mkButton "q" "<CMD>qa<CR>" "Quit" "String")
             ];
         }
