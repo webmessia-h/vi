@@ -1,25 +1,24 @@
 { pkgs, ... }:
 {
- 
   config = {
- performance = {
-    byteCompileLua = {
-      enable = true;
-      nvimRuntime = true;
-      configs = true;
-      plugins = true;
+    performance = {
+      byteCompileLua = {
+        enable = true;
+        nvimRuntime = true;
+        configs = true;
+        plugins = true;
+      };
     };
-  };
-  diagnostics = {
-    update_in_insert = true;
-    severity_sort = true;
-    float = {
-      border = "rounded";
+    diagnostics = {
+      update_in_insert = true;
+      severity_sort = true;
+      float = {
+        border = "rounded";
+      };
+      jump = {
+        severity.__raw = "vim.diagnostic.severity.WARN";
+      };
     };
-    jump = {
-      severity.__raw = "vim.diagnostic.severity.WARN";
-    };
-  };
     opts = {
       # Enable relative line numbers
       number = true;
@@ -110,6 +109,10 @@
       showmode = false;
       # Clipboard provider
       clipboard.providers.wl-copy.enable = true;
+      list = true;
+      listchars = {
+        trail = "⁘";
+      };
     };
   };
 }

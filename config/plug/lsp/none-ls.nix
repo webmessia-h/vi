@@ -13,30 +13,32 @@
       };
       diagnostics = {
         statix.enable = true;
-        cppcheck = {
-          enable = true;
-          settings = {
-            disabled_filetypes = [
-              "h"
-              "hpp"
-            ];
-            extra_args = [
-              #"--enable=all"
-              "--enable=warning,style,performance,portability"
-              "--check-level=exhaustive"
-              "--template=gcc"
-              "--std=c17"
-              "--inline-suppr"
-              "--suppress=missingInclude"
-              "--suppress=checkersReport"
-              #"--addon=misra.py"
-            ];
-            rootPatterns = [
-              ".git"
-              "compile_commands.json"
-            ];
+        /*
+          cppcheck = {
+            enable = true;
+            settings = {
+              disabled_filetypes = [
+                "h"
+                "hpp"
+              ];
+              extra_args = [
+                #"--enable=all"
+                "--enable=warning,style,performance,portability"
+                "--check-level=exhaustive"
+                "--template=gcc"
+                "--std=c17"
+                "--inline-suppr"
+                "--suppress=missingInclude"
+                "--suppress=checkersReport"
+                #"--addon=misra.py"
+              ];
+              rootPatterns = [
+                ".git"
+                "compile_commands.json"
+              ];
+            };
           };
-        };
+        */
         checkmake.enable = true;
       };
       formatting = {

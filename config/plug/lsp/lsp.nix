@@ -5,6 +5,7 @@
     };
     lsp = {
       enable = true;
+      inlayHints = true;
       servers = {
         nil-ls = {
           enable = true;
@@ -14,14 +15,16 @@
           cmd = [
             "clangd"
             "--clang-tidy"
+            "--inlay-hints=true"
+            "--background-index"
+            "--completion-style=detailed"
+            "--function-arg-placeholders"
             "--clang-tidy-checks=*"
             #"--config-file=/home/webmessia-h/.clang-tidy"
             "--all-scopes-completion"
             "--cross-file-rename"
-            "--completion-style=detailed"
             "--header-insertion-decorators"
             "--header-insertion=iwyu"
-            "--pch-storage=memory"
           ];
         };
       };
@@ -100,5 +103,6 @@
     require('lspconfig.ui.windows').default_options = {
       border = _border
     }
+
   '';
 }

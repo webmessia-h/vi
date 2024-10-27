@@ -6,8 +6,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "shellRaining";
         repo = "hlchunk.nvim";
-        rev = "ba6e2347177fec8ec6af4ae26d11a468c9e0ca72";
-        hash = "sha256-IwxyUwL10pop+Aod7BFM67JFXVY37z2Ly4EnlGPwfls=";
+        rev = "v1.3.0";
+        hash = "sha256-UGxrfFuLJETL/KJNY9k4zehxb6RrXC6UZxnG+7c9JXw=";
       };
     })
   ];
@@ -15,7 +15,7 @@
   extraConfigLua = ''
     local default_conf = {
         enable = true,
-        notify = false,
+        notify = true,  -- Enabled notifications
         exclude_filetypes = {
             alpha = true,
             dashboard = true,
@@ -52,10 +52,28 @@
         use_treesitter = false,
     }
 
-    -- Now merge these configurations into your hlchunk setup
+    local blank_conf = {
+        enable = true,
+        priority = 9,
+        chars = { "⁘", "⁙" },
+        style = "#1f1f1f",
+    }
+
+    local indent_conf = {
+        enable = true,
+        chars = {
+            "⁘",
+        },
+        style = {
+            "#1f1f1f",
+        },
+    }
+
     require('hlchunk').setup({
         chunk = chunk_conf,
         line_num = line_num_conf,
+        blank = blank_conf,
+        indent = indent_conf,  -- Corrected typo
         -- you can add more configurations here
     })
   '';
