@@ -15,7 +15,6 @@
     <img src="assets/project_files.png" alt="project files">
     <img src="assets/trouble.png" alt="trouble">
     <img src="assets/markdown.png" alt="markdown">
-    <img src="assets/LaTeX.png" alt="LaTeX rendering">
     </details>
 
 ## Configuring
@@ -98,17 +97,28 @@ If you add a new configuration file, remember to add it to the
   - **[mini](../config/plug/utils/mini.nix):** Cool neovim utilities, currently using `ai`, `notify`, and `surround`
   - **[nvim-autopairs](../config/plug/utils/nvim-autopairs.nix):** Autopairs in nvim
   - **[nvim-colorizer](../config/plug/utils/nvim-colorizer.nix):** Preview colors in neovim
-  - **[obsidian](../config/plug/utils/obsidian.nix):** Obsidian integration for nvim
-  - **[oil](../config/plug/utils/oil.nix):** Navigate in your working folder with a buffer
   - **[ufo](../config/plug/utils/ufo.nix):** Folding plugin
   - **[undotree](../config/plug/utils/undotree.nix):** Undo history visualizer
   - **[whichkey](../config/plug/utils/whichkey.nix):** Popup to display keybindings
   - **[trouble](../config/plug/utils/trouble.nix):** Pretty interface for working with LSP
-  - **[wakatime](../config/plug/utils/wakatime.nix):** Track your coding activity
   - **[neo-tree](../config/plug/utils/neo-tree.nix):** File explorer tree
-  - **[graph](../config/plug/utils/graph.nix):** Mermaid diagrams renderer (**commented out**)
-  - **[harpoon](../config/plug/utils/harpoon.nix):** Quickly switch between buffers (**commented out**)
-  - **[vim-be-good](../config/plug/utils/vim-be-good.nix):** Game to practice Vim skills (**commented out**)
+ 
+ ## Instruction for colleagues:
+ ```shell
+ $ sh <(curl -L https://nixos.org/nix/install) --daemon # install NIX package manager FOR ALL USERS RECOMMENDED
+ # $ sh <(curl -L https://nixos.org/nix/install) --no-daemon # FOR CURRENT USER
+ $ git clone https:/github.com/webmessia-h/vi ~/vi # creates vi/ directory in your home directory (/home/USERNAME/vi)
+ $ mkdir -p ~/.config && mkdir -p ~/.config/nix
+ $ cat << EOF > nix.conf                             
+        experimental-features = nix-command flakes         # I`m not 100% sure it will work, if not try writing this line manually
+    EOF
+ $ nix profile install ~/vi
+ $ nvim  # test if it's running
+ # make alias vi='nvim'
+ # cat << EOF > ~/.bashrc # (or ~/.zshrc)
+ # alias vi='nvim'
+ # You will also need font to render all glyphs - follow nerdfonts.com, install one that is of your taste and extract contents of archive to ~/.fonts direcotory
+```
 
   ## Testing your new configuration
 
@@ -123,7 +133,7 @@ If you have nix installed, you can directly run my config from anywhere
 You can try running mine with:
 
 ```shell
-nix run 'github:webmessia-h/nixvi'
+nix run 'github:webmessia-h/vi'
 ```
 
 ## Installing into NixOS configuration
