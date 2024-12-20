@@ -107,7 +107,7 @@ If you add a new configuration file, remember to add it to the
  # $ sh <(curl -L https://nixos.org/nix/install) --no-daemon # FOR CURRENT USER
  $ git clone https:/github.com/webmessia-h/vi ~/vi # creates vi/ directory in your home directory (/home/USERNAME/vi)
  $ mkdir -p ~/.config && mkdir -p ~/.config/nix
- $ cat << EOF > nix.conf                             
+ $ cat << EOF > ~/.config/nix/nix.conf                             
         experimental-features = nix-command flakes         # I`m not 100% sure it will work, if not try writing this line manually
     EOF
  $ nix profile install ~/vi
