@@ -82,8 +82,6 @@ If you add a new configuration file, remember to add it to the
   - **[dressing](../config/plug/ui/dressing.nix):** Improved UI for `vim.ui` interfaces
   - **[smart-splits](../config/plug/ui/smart-splits.nix):** Resize splits more intelligently
   - **[indent-blankline](../config/plug/ui/indent-blankline.nix):** Adds indentation guides
-  - **[image-nvim](../config/plug/ui/image-nvim.nix):** Render images in markdown (**commented out**)
-  - **[nabla](../config/plug/ui/nabla.nix):** LaTeX support (not used anymore; **commented out**)
 
 - **[utils/](../config/plug/utils)**
 
