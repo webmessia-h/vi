@@ -113,8 +113,9 @@ If you add a new configuration file, remember to add it to the
  $ nix profile install ~/vi
  $ nvim  # test if it's running
  # make alias vi='nvim'
- # cat << EOF > ~/.bashrc # (or ~/.zshrc)
- # alias vi='nvim'
+ # $ cat << EOF > ~/.bashrc # (or ~/.zshrc)
+ #      alias vi='nvim'
+ #      EOF    
  # You will also need font to render all glyphs - follow nerdfonts.com, install one that is of your taste and extract contents of archive to ~/.fonts direcotory
 ```
 
